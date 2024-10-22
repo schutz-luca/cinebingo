@@ -1,0 +1,396 @@
+{
+    "en": [
+        {
+            "name": "GET OUT!",
+            "cast": [
+                "Daniel Kaluuya"
+            ],
+            "directBy": "Jordan Peele",
+            "awards": [
+                "Oscar Best Screenplay"
+            ],
+            "country": "USA",
+            "productionBy": "Universal Studios"
+        },
+        {
+            "name": "THE SHINING",
+            "cast": [
+                "Jack Nicholson",
+                "Shelley Duvall"
+            ],
+            "directBy": "Stanley Kubrick",
+            "awards": [
+                "Oscar Best Original Score"
+            ],
+            "country": "USA",
+            "productionBy": "Warner Bros."
+        },
+        {
+            "name": "INCEPTION",
+            "cast": [
+                "Leonardo DiCaprio",
+                "Joseph Gordon-Levitt"
+            ],
+            "directBy": "Christopher Nolan",
+            "awards": [
+                "Oscar Best Visual Effects"
+            ],
+            "country": "USA",
+            "productionBy": "Legendary Pictures"
+        },
+        {
+            "name": "PULP FICTION",
+            "cast": [
+                "John Travolta",
+                "Uma Thurman"
+            ],
+            "directBy": "Quentin Tarantino",
+            "awards": [
+                "Oscar Best Original Screenplay"
+            ],
+            "country": "USA",
+            "productionBy": "Miramax"
+        },
+        {
+            "name": "THE GODFATHER",
+            "cast": [
+                "Marlon Brando",
+                "Al Pacino"
+            ],
+            "directBy": "Francis Ford Coppola",
+            "awards": [
+                "Oscar Best Picture",
+                "Oscar Best Actor"
+            ],
+            "country": "USA",
+            "productionBy": "Paramount Pictures"
+        },
+        {
+            "name": "POOR THINGS",
+            "cast": [
+                "Emma Stone",
+                "Mark Ruffalo"
+            ],
+            "directBy": "Yorgos Lanthimos",
+            "awards": [
+                "Oscar Best Actress",
+                "Oscar Best Makeup",
+                "Oscar Best Production Design"
+            ],
+            "country": "USA",
+            "productionBy": "Searchlight Pictures"
+        },
+        {
+            "name": "LA LA LAND",
+            "cast": [
+                "Emma Stone",
+                "Ryan Gosling"
+            ],
+            "directBy": "Damien Chazelle",
+            "awards": [
+                "Oscar Best Actress",
+                "Oscar Best Director",
+                "Oscar Best Original Score",
+                "Oscar Best Cinematography",
+                "Oscar Best Production Design"
+            ],
+            "country": "USA",
+            "productionBy": "Summit Entertainment"
+        },
+        {
+            "name": "MIDSOMMAR",
+            "cast": [
+                "Florence Pugh"
+            ],
+            "directBy": "Ari Aster",
+            "awards": [],
+            "country": "USA",
+            "productionBy": "A24"
+        },
+        {
+            "name": "CIVIL WAR",
+            "cast": [
+                "Wagner Moura"
+            ],
+            "directBy": "Alex Garland",
+            "awards": [],
+            "country": "USA",
+            "productionBy": "A24"
+        },
+        {
+            "name": "ELITE SQUAD",
+            "cast": [
+                "Wagner Moura"
+            ],
+            "directBy": "José Padilha",
+            "awards": [],
+            "country": "Brazil",
+            "productionBy": "Universal Studios"
+        },
+        {
+            "name": "CENTRAL STATION",
+            "cast": [
+                "Fernanda Montenegro"
+            ],
+            "directBy": "Walter Carvalho",
+            "awards": [],
+            "country": "Brazil",
+            "productionBy": "O2 Filmes"
+        },
+        {
+            "name": "ARGENTINA 1985",
+            "cast": [
+                "Ricardo Darín"
+            ],
+            "directBy": "Santiago Mitre",
+            "awards": [],
+            "country": "Argentina",
+            "productionBy": "Academia Argentina de Cinema"
+        },
+        {
+            "name": "AMÉLIE",
+            "cast": [
+                "Audrey Tautou"
+            ],
+            "directBy": "Jean-Pierre Jeunet",
+            "awards": [],
+            "country": "France",
+            "productionBy": "Gébéka Films"
+        },
+        {
+            "name": "THE WORST PERSON IN THE WORLD",
+            "cast": [
+                "Renate Reinsve"
+            ],
+            "directBy": "Joachim Trier",
+            "awards": [],
+            "country": "Norway",
+            "productionBy": "FilmWave"
+        },
+        {
+            "name": "DUNE",
+            "cast": [
+                "Zendaya",
+                "Timothée Chalamet"
+            ],
+            "directBy": "Denis Villeneuve",
+            "awards": [
+                "Oscar Best Visual Effects",
+                "Oscar Best Original Score",
+                "Oscar Best Cinematography",
+                "Oscar Best Editing",
+                "Oscar Best Production Design",
+                "Oscar Best Sound"
+            ],
+            "country": "USA",
+            "productionBy": "Legendary Pictures"
+        },
+        {
+            "name": "BARBIE",
+            "cast": [
+                "Margot Robbie"
+            ],
+            "directBy": "Greta Gerwig",
+            "awards": [],
+            "country": "USA",
+            "productionBy": "Warner Bros."
+        }
+    ],
+    "pt": [
+        {
+            "name": "Corra!",
+            "cast": [
+                "Daniel Kaluuya"
+            ],
+            "directBy": "Jordan Peele",
+            "awards": [
+                "Oscar de Melhor Roteiro"
+            ],
+            "country": "EUA",
+            "productionBy": "Universal Studios"
+        },
+        {
+            "name": "O Iluminado",
+            "cast": [
+                "Jack Nicholson",
+                "Shelley Duvall"
+            ],
+            "directBy": "Stanley Kubrick",
+            "awards": [
+                "Oscar de Melhor Trilha Sonora"
+            ],
+            "country": "EUA",
+            "productionBy": "Warner Bros."
+        },
+        {
+            "name": "A Origem",
+            "cast": [
+                "Leonardo DiCaprio",
+                "Joseph Gordon-Levitt"
+            ],
+            "directBy": "Christopher Nolan",
+            "awards": [
+                "Oscar de Melhores Efeitos Visuais"
+            ],
+            "country": "EUA",
+            "productionBy": "Legendary Pictures"
+        },
+        {
+            "name": "Pulp Fiction: Tempo de Violência",
+            "cast": [
+                "John Travolta",
+                "Uma Thurman"
+            ],
+            "directBy": "Quentin Tarantino",
+            "awards": [
+                "Oscar de Melhor Roteiro Original"
+            ],
+            "country": "EUA",
+            "productionBy": "Miramax"
+        },
+        {
+            "name": "O Poderoso Chefão",
+            "cast": [
+                "Marlon Brando",
+                "Al Pacino"
+            ],
+            "directBy": "Francis Ford Coppola",
+            "awards": [
+                "Oscar de Melhor Filme",
+                "Oscar de Melhor Ator"
+            ],
+            "country": "EUA",
+            "productionBy": "Paramount Pictures"
+        },
+        {
+            "name": "Pobres Criaturas",
+            "cast": [
+                "Emma Stone",
+                "Mark Ruffalo"
+            ],
+            "directBy": "Yorgos Lanthimos",
+            "awards": [
+                "Oscar de Melhor Atriz",
+                "Oscar de Melhor Maquiagem",
+                "Oscar de Melhor Direção de Arte"
+            ],
+            "country": "EUA",
+            "productionBy": "Searchlight Pictures"
+        },
+        {
+            "name": "La La Land: Cantando Estações",
+            "cast": [
+                "Emma Stone",
+                "Ryan Gosling"
+            ],
+            "directBy": "Damien Chazelle",
+            "awards": [
+                "Oscar de Melhor Atriz",
+                "Oscar de Melhor Diretor",
+                "Oscar de Melhor Trilha Sonora Original",
+                "Oscar de Melhor Fotografia",
+                "Oscar de Melhor Direção de Arte"
+            ],
+            "country": "EUA",
+            "productionBy": "Summit Entertainment"
+        },
+        {
+            "name": "Midsommar: O Mal Não Espera a Noite",
+            "cast": [
+                "Florence Pugh"
+            ],
+            "directBy": "Ari Aster",
+            "awards": [],
+            "country": "EUA",
+            "productionBy": "A24"
+        },
+        {
+            "name": "Guerra Civil",
+            "cast": [
+                "Wagner Moura"
+            ],
+            "directBy": "Alex Garland",
+            "awards": [],
+            "country": "EUA",
+            "productionBy": "A24"
+        },
+        {
+            "name": "Tropa de Elite",
+            "cast": [
+                "Wagner Moura"
+            ],
+            "directBy": "José Padilha",
+            "awards": [],
+            "country": "Brasil",
+            "productionBy": "Universal Studios"
+        },
+        {
+            "name": "Central do Brasil",
+            "cast": [
+                "Fernanda Montenegro"
+            ],
+            "directBy": "Walter Salles",
+            "awards": [],
+            "country": "Brasil",
+            "productionBy": "O2 Filmes"
+        },
+        {
+            "name": "Argentina, 1985",
+            "cast": [
+                "Ricardo Darín"
+            ],
+            "directBy": "Santiago Mitre",
+            "awards": [],
+            "country": "Argentina",
+            "productionBy": "Academia Argentina de Cinema"
+        },
+        {
+            "name": "O Fabuloso Destino de Amélie Poulain",
+            "cast": [
+                "Audrey Tautou"
+            ],
+            "directBy": "Jean-Pierre Jeunet",
+            "awards": [],
+            "country": "França",
+            "productionBy": "Gébéka Films"
+        },
+        {
+            "name": "A Pior Pessoa do Mundo",
+            "cast": [
+                "Renate Reinsve"
+            ],
+            "directBy": "Joachim Trier",
+            "awards": [],
+            "country": "Noruega",
+            "productionBy": "FilmWave"
+        },
+        {
+            "name": "Duna",
+            "cast": [
+                "Zendaya",
+                "Timothée Chalamet"
+            ],
+            "directBy": "Denis Villeneuve",
+            "awards": [
+                "Oscar de Melhores Efeitos Visuais",
+                "Oscar de Melhor Trilha Sonora",
+                "Oscar de Melhor Fotografia",
+                "Oscar de Melhor Edição",
+                "Oscar de Melhor Direção de Arte",
+                "Oscar de Melhor Som"
+            ],
+            "country": "EUA",
+            "productionBy": "Legendary Pictures"
+        },
+        {
+            "name": "Barbie",
+            "cast": [
+                "Margot Robbie"
+            ],
+            "directBy": "Greta Gerwig",
+            "awards": [],
+            "country": "EUA",
+            "productionBy": "Warner Bros."
+        }
+    ]
+}
