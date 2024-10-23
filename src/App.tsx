@@ -10,6 +10,7 @@ export type ContentView = Omit<Content, 'name'>;
 interface BoardItem {
   category: keyof ContentView;
   value: string;
+  checked: 'correct' | ''
 }
 
 function App() {
@@ -21,9 +22,6 @@ function App() {
 
   // Skipable option position
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Already clicked board options
-  const [clickedContent, setClickedContent] = useState<{ index: number, correct: boolean }[]>([]);
 
   const currentContent = skipableContent[currentIndex];
 
@@ -61,33 +59,25 @@ function App() {
 
       return {
         category: selectedCategory,
-        value: selectedValue
-      }
+        value: selectedValue,
+        checked: ''
+      } as BoardItem
     })
   }
 
   const clickContent = (boardItem: BoardItem, index: number) => {
+    if (!board) return;
+
     // Check if the answear was correct
     const correct = currentContent[boardItem.category] == boardItem.value || currentContent[boardItem.category].includes(boardItem.value);
 
-    // Add item to clicked content list
-    setClickedContent([
-      ...clickedContent,
-      {
-        index,
-        correct
-      }
-    ]);
+    if (correct) setBoard(board.map((item, currentIndex) => {
+      if (currentIndex === index) return { ...item, checked: 'correct' }
+      else return item
+    }))
 
     // Pass the current content
     next();
-  }
-
-  const addClickedStyle = (index: number) => {
-    const clickedItem = clickedContent.filter(({ index: currentIndex }) => currentIndex === index)[0];
-
-    if (!!clickedItem?.correct) return ` correct`;
-    else return ''
   }
 
   useEffect(() => {
@@ -104,35 +94,25 @@ function App() {
     setBoard(board);
   }, []);
 
+  // Rounds control
   useEffect(() => {
     if (!board) return;
 
-    const points = clickedContent.filter(item => item.correct).length * 200;
+    // Update points
+    const points = board.filter(item => item.checked === 'correct').length * 200;
     setPoints(points);
 
-    // Check if all board options was clicked
-    if (clickedContent.length === board.length) {
+    // Set lose if the current position equals skipable content count
+    if (currentIndex === skipableContent.length) {
       // Set win only if every clicked option was correct
-      const win = clickedContent.every(item => item.correct);
+      const win = board.every(item => item.checked === 'correct');
       setOverReport({
         win,
         points,
         optionsUsed: currentIndex,
       })
-      return;
-    }
-
-    // Set lose if the current position equals skipable content count
-    if (currentIndex === skipableContent.length) {
-      setOverReport({
-        win: false,
-        points,
-        optionsUsed: currentIndex,
-      })
     }
   }, [currentIndex]);
-
-  console.log(overReport)
 
   return (
     <div className='container'>
@@ -164,9 +144,10 @@ function App() {
             <div className='board'>
               {board.map((item, index) => (
                 <button
-                  className={`board-item${addClickedStyle(index)}`}
+                  className={`board-item${item.checked === 'correct' ? ' correct' : ''}`}
                   onClick={() => clickContent(item, index)}
-                  disabled={!!addClickedStyle(index) || !!overReport}
+                  disabled={item.checked === 'correct' || !!overReport}
+                  key={`${item.value}/${index}`}
                 >
                   <h4>{categoryLabels.pt[item.category]}</h4>
                   <p>{item.value}</p>
