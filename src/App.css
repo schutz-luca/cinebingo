@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -13,13 +12,15 @@
 
 .board {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(3, 260px); /* Creates 3 equal columns */
-  grid-template-rows: repeat(3, 160px);    /* Creates 3 equal rows */
+  grid-template-rows: repeat(3, 140px);    /* Creates 3 equal rows */
   gap: 10px;       
+  margin-top: 20px;
   
   @media (max-width: 768px){
-    grid-template-columns: repeat(2, 200px); /* Creates 3 equal columns */
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(2, 160px); /* Creates 3 equal columns */
+    grid-template-rows: repeat(3, 80px);
   }
 }
 
@@ -49,14 +50,14 @@
 }
 
 .current-content button {
-  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .board-item.wrong {
   background-color: #642626;
 }
 
-h4,p {
+h2, h3, h4,p {
   margin: 0;
 }
 
@@ -64,12 +65,32 @@ h4 {
   font-size: 18px;
 
   @media (max-width: 768px){
-    font-size: 16px;
+    font-size: 12px;
+  }
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 50px;
+
+  @media (max-width: 768px){
+    font-size: 2em;
+  }
+}
+
+h2 {
+  @media (max-width: 768px){
+    font-size: 1em;
   }
 }
 
 p {
   font-weight: 400;
+
+  @media (max-width: 768px){
+    font-size: 14px;
+  }
 }
 
 .over-report {

@@ -31,6 +31,11 @@ function App() {
     setCurrentIndex(currentIndex + 1);
   }
 
+  const skip = () => {
+    skipableContent.pop();
+    next();
+  }
+
   const generateBoard = (content: ContentView[]) => {
     const selectedContent = getRandomItems<ContentView>(content, 9);
 
@@ -81,7 +86,7 @@ function App() {
   const addClickedStyle = (index: number) => {
     const clickedItem = clickedContent.filter(({ index: currentIndex }) => currentIndex === index)[0];
 
-    if (clickedItem) return `${clickedItem.correct ? ' correct' : ' wrong'}`;
+    if (!!clickedItem?.correct) return ` correct`;
     else return ''
   }
 
@@ -102,7 +107,7 @@ function App() {
   useEffect(() => {
     if (!board) return;
 
-    const points = clickedContent.filter(item => item.correct).length * 200 - currentIndex * 5;
+    const points = clickedContent.filter(item => item.correct).length * 200;
     setPoints(points);
 
     // Check if all board options was clicked
@@ -133,15 +138,18 @@ function App() {
     <div className='container'>
       <h1>CINEBINGO 🎬</h1>
       {!overReport ?
-        < div className='current-content'>
-          <b>{currentContent?.name}</b>
-          <button onClick={next}>skip</button>
+        <div className='current-content'>
+          <small>Faltam {skipableContent.length - currentIndex}</small>
+          <h2>{currentContent?.name}</h2>
+          <div>
+            <button onClick={skip}>skip</button>
+          </div>
         </div>
         :
         <div className='over-report'>
           <h2>{overReport.win ? 'You Won! 🎉' : 'Game Over... 👾'}</h2>
-          <h3>{overReport.points} points</h3>
-          <p>Options Used: {overReport.optionsUsed}</p>
+          <br />
+          <small>{overReport.optionsUsed} opções gastas</small>
         </div>
       }
 
@@ -150,25 +158,21 @@ function App() {
           <div>'Board loading...' </div>
           :
           <>
-            {!overReport &&
-              <>
-                <h3>
-                  {points} points
-                </h3>
-                <div className='board'>
-                  {board.map((item, index) => (
-                    <button
-                      className={`board-item${addClickedStyle(index)}`}
-                      onClick={() => clickContent(item, index)}
-                      disabled={!!addClickedStyle(index)}
-                    >
-                      <h4>{categoryLabels.pt[item.category]}</h4>
-                      <p>{item.value}</p>
-                    </button>
-                  ))}
-                </div>
-              </>
-            }
+            <h3>
+              {points} points
+            </h3>
+            <div className='board'>
+              {board.map((item, index) => (
+                <button
+                  className={`board-item${addClickedStyle(index)}`}
+                  onClick={() => clickContent(item, index)}
+                  disabled={!!addClickedStyle(index) || !!overReport}
+                >
+                  <h4>{categoryLabels.pt[item.category]}</h4>
+                  <p>{item.value}</p>
+                </button>
+              ))}
+            </div>
 
           </>
       }
