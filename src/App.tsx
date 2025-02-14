@@ -30,7 +30,6 @@ function App() {
   }
 
   const skip = () => {
-    skipableContent.pop();
     next();
   }
 
@@ -75,6 +74,7 @@ function App() {
       if (currentIndex === index) return { ...item, checked: 'correct' }
       else return item
     }))
+    else skipableContent.pop();
 
     // Pass the current content
     next();
