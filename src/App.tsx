@@ -1,3 +1,4 @@
+import { isEqual } from 'lodash'
 import { useEffect, useState } from 'react'
 import './App.css'
 import { ContentService } from './api'
@@ -33,35 +34,43 @@ function App() {
     next();
   }
 
+  const selectCategoryFromContent = (item: ContentView, selectedCategories: BoardItem[]) => {
+    // Remove name from board view categories
+    let keys = Object.keys(item).filter(key => key !== 'name');
+
+    // Check and remove if there's empty awards
+    if (!item.awards?.length) keys = keys.filter(key => key !== 'awards');
+
+    // Select a random category
+    const selectedKey = getRandomItems(keys, 1)[0] as unknown as keyof ContentView;
+
+    // Find the corresponding category value
+    const value = item[selectedKey];
+
+    // If the option is an array, select a random value
+    const selectedValue = Array.isArray(value) ? getRandomItems(value, 1)[0] : value;
+
+    let selectedCategory = {
+      category: selectedKey,
+      value: selectedValue,
+      checked: ''
+    } as BoardItem
+
+    // Prevent board from having equals options
+    if (!selectedCategories.some(item => isEqual(item, selectedCategory)))
+      selectedCategories.push(selectedCategory);
+    else
+      selectCategoryFromContent(item, selectedCategories);
+  }
+
   const generateBoard = (content: ContentView[]) => {
     const selectedContent = getRandomItems<ContentView>(content, 9);
 
-    return selectedContent.map(item => {
-      // Check if open has empty awards
-      let deleteAwards = false;
-      if (!item.awards?.length) deleteAwards = true;
+    const selectedCategories: BoardItem[] = [];
 
-      // Remove name from board view categories
-      let keys = Object.keys(item).filter(key => key !== 'name');
+    selectedContent.map(item => selectCategoryFromContent(item, selectedCategories));
 
-      // If it's empty remove it
-      if (deleteAwards) keys = keys.filter(key => key !== 'awards');
-
-      // Select a random category
-      const selectedCategory = getRandomItems(keys, 1)[0] as unknown as keyof ContentView;
-
-      // Find the corresponding category value
-      const value = item[selectedCategory];
-
-      // If the option is an array, select a random value
-      const selectedValue = Array.isArray(value) ? getRandomItems(value, 1)[0] : value;
-
-      return {
-        category: selectedCategory,
-        value: selectedValue,
-        checked: ''
-      } as BoardItem
-    })
+    return selectedCategories;
   }
 
   const clickContent = (boardItem: BoardItem, index: number) => {
@@ -103,7 +112,7 @@ function App() {
     setPoints(points);
 
     // Set lose if the current position equals skipable content count
-    if (currentIndex === skipableContent.length) {
+    if (currentIndex >= skipableContent.length) {
       // Set win only if every clicked option was correct
       const win = board.every(item => item.checked === 'correct');
       setOverReport({
