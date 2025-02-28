@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { BoardItem } from '../../components/board/types';
 import { State } from '../../@types/commons';
 

@@ -4,7 +4,6 @@ import { TargetMovie } from './components/current-movie';
 import { Board } from './components/board';
 import { GameOverReport } from './components/game-over-report';
 import { GameContext } from './context/game-context';
-import { BiSolidCameraMovie } from 'react-icons/bi';
 import { RiMovie2AiLine } from 'react-icons/ri';
 
 function App() {
