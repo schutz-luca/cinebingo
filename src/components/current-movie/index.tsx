@@ -1,0 +1,30 @@
+import { RiSkipForwardFill } from 'react-icons/ri';
+import './styles.scss';
+import { useContext } from 'react';
+import { GameContext } from '../../context/game-context';
+
+export const TargetMovie = () => {
+    const { skip, currentContent, skipableContent, currentIndex } = useContext(GameContext);
+
+    const lasts = skipableContent.value.length - currentIndex.value;
+
+    return (
+        <>
+            <div className='current-content'>
+                {/* <div className='content'> */}
+                <div className='lasts'>{lasts}</div>
+                <div className='details'>
+                    <h2>{currentContent?.name}</h2>
+                    <div>1997</div>
+                </div>
+                {/* </div> */}
+                <div>
+                    <button onClick={skip}>
+                        <RiSkipForwardFill />
+                    </button>
+                </div>
+            </div>
+            <div className='content'></div>
+        </>
+    );
+};

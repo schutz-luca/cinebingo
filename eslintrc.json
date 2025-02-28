@@ -1,0 +1,72 @@
+{
+    "extends": ["plugin:prettier/recommended", "plugin:import/recommended", "prettier"],
+    "plugins": ["import", "unused-imports"],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "react-hooks/exhaustive-deps": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "camelcase": "error",
+        "curly": ["error", "multi-or-nest"],
+        "spaced-comment": "error",
+        "unused-imports/no-unused-imports": "error",
+        "unused-imports/no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "varsIgnorePattern": "^_",
+                "args": "after-used",
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "no-duplicate-imports": "error",
+        "semi": ["error", "always"],
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1
+            }
+        ],
+        "eol-last": ["error", "always"],
+        "import/order": [
+            "warn",
+            {
+                "groups": [["builtin", "external"], ["internal"], ["parent", "sibling", "index"]],
+                "pathGroups": [
+                    {
+                        "pattern": "@/**",
+                        "group": "internal",
+                        "position": "after"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"],
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ],
+        "import/named": "off",
+        "import/no-named-as-default-member": "off",
+        "prettier/prettier": [
+            "error",
+            {
+                "semi": true,
+                "tabWidth": 4,
+                "printWidth": 120,
+                "singleQuote": true,
+                "trailingComma": "all",
+                "jsxSingleQuote": true,
+                "bracketSpacing": true,
+                "endOfLine": "lf"
+            }
+        ]
+    }
+}

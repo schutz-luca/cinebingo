@@ -18,4 +18,4 @@ export const getRandomItems = <T>(arr: T[], count: number) => {
     }
 
     return randomItems;
-}
+};

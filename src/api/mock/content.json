@@ -2,90 +2,55 @@
     "en": [
         {
             "name": "GET OUT!",
-            "cast": [
-                "Daniel Kaluuya"
-            ],
+            "cast": ["Daniel Kaluuya"],
             "directBy": "Jordan Peele",
-            "awards": [
-                "Oscar Best Screenplay"
-            ],
+            "awards": ["Oscar Best Screenplay"],
             "country": "USA",
             "productionBy": "Universal Studios"
         },
         {
             "name": "THE SHINING",
-            "cast": [
-                "Jack Nicholson",
-                "Shelley Duvall"
-            ],
+            "cast": ["Jack Nicholson", "Shelley Duvall"],
             "directBy": "Stanley Kubrick",
-            "awards": [
-                "Oscar Best Original Score"
-            ],
+            "awards": ["Oscar Best Original Score"],
             "country": "USA",
             "productionBy": "Warner Bros."
         },
         {
             "name": "INCEPTION",
-            "cast": [
-                "Leonardo DiCaprio",
-                "Joseph Gordon-Levitt"
-            ],
+            "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
             "directBy": "Christopher Nolan",
-            "awards": [
-                "Oscar Best Visual Effects"
-            ],
+            "awards": ["Oscar Best Visual Effects"],
             "country": "USA",
             "productionBy": "Legendary Pictures"
         },
         {
             "name": "PULP FICTION",
-            "cast": [
-                "John Travolta",
-                "Uma Thurman"
-            ],
+            "cast": ["John Travolta", "Uma Thurman"],
             "directBy": "Quentin Tarantino",
-            "awards": [
-                "Oscar Best Original Screenplay"
-            ],
+            "awards": ["Oscar Best Original Screenplay"],
             "country": "USA",
             "productionBy": "Miramax"
         },
         {
             "name": "THE GODFATHER",
-            "cast": [
-                "Marlon Brando",
-                "Al Pacino"
-            ],
+            "cast": ["Marlon Brando", "Al Pacino"],
             "directBy": "Francis Ford Coppola",
-            "awards": [
-                "Oscar Best Picture",
-                "Oscar Best Actor"
-            ],
+            "awards": ["Oscar Best Picture", "Oscar Best Actor"],
             "country": "USA",
             "productionBy": "Paramount Pictures"
         },
         {
             "name": "POOR THINGS",
-            "cast": [
-                "Emma Stone",
-                "Mark Ruffalo"
-            ],
+            "cast": ["Emma Stone", "Mark Ruffalo"],
             "directBy": "Yorgos Lanthimos",
-            "awards": [
-                "Oscar Best Actress",
-                "Oscar Best Makeup",
-                "Oscar Best Production Design"
-            ],
+            "awards": ["Oscar Best Actress", "Oscar Best Makeup", "Oscar Best Production Design"],
             "country": "USA",
             "productionBy": "Searchlight Pictures"
         },
         {
             "name": "LA LA LAND",
-            "cast": [
-                "Emma Stone",
-                "Ryan Gosling"
-            ],
+            "cast": ["Emma Stone", "Ryan Gosling"],
             "directBy": "Damien Chazelle",
             "awards": [
                 "Oscar Best Actress",
@@ -99,9 +64,7 @@
         },
         {
             "name": "MIDSOMMAR",
-            "cast": [
-                "Florence Pugh"
-            ],
+            "cast": ["Florence Pugh"],
             "directBy": "Ari Aster",
             "awards": [],
             "country": "USA",
@@ -109,9 +72,7 @@
         },
         {
             "name": "CIVIL WAR",
-            "cast": [
-                "Wagner Moura"
-            ],
+            "cast": ["Wagner Moura"],
             "directBy": "Alex Garland",
             "awards": [],
             "country": "USA",
@@ -119,9 +80,7 @@
         },
         {
             "name": "ELITE SQUAD",
-            "cast": [
-                "Wagner Moura"
-            ],
+            "cast": ["Wagner Moura"],
             "directBy": "José Padilha",
             "awards": [],
             "country": "Brazil",
@@ -129,9 +88,7 @@
         },
         {
             "name": "CENTRAL STATION",
-            "cast": [
-                "Fernanda Montenegro"
-            ],
+            "cast": ["Fernanda Montenegro"],
             "directBy": "Walter Carvalho",
             "awards": [],
             "country": "Brazil",
@@ -139,9 +96,7 @@
         },
         {
             "name": "ARGENTINA 1985",
-            "cast": [
-                "Ricardo Darín"
-            ],
+            "cast": ["Ricardo Darín"],
             "directBy": "Santiago Mitre",
             "awards": [],
             "country": "Argentina",
@@ -149,9 +104,7 @@
         },
         {
             "name": "AMÉLIE",
-            "cast": [
-                "Audrey Tautou"
-            ],
+            "cast": ["Audrey Tautou"],
             "directBy": "Jean-Pierre Jeunet",
             "awards": [],
             "country": "France",
@@ -159,9 +112,7 @@
         },
         {
             "name": "THE WORST PERSON IN THE WORLD",
-            "cast": [
-                "Renate Reinsve"
-            ],
+            "cast": ["Renate Reinsve"],
             "directBy": "Joachim Trier",
             "awards": [],
             "country": "Norway",
@@ -169,10 +120,7 @@
         },
         {
             "name": "DUNE",
-            "cast": [
-                "Zendaya",
-                "Timothée Chalamet"
-            ],
+            "cast": ["Zendaya", "Timothée Chalamet"],
             "directBy": "Denis Villeneuve",
             "awards": [
                 "Oscar Best Visual Effects",
@@ -187,9 +135,7 @@
         },
         {
             "name": "BARBIE",
-            "cast": [
-                "Margot Robbie"
-            ],
+            "cast": ["Margot Robbie"],
             "directBy": "Greta Gerwig",
             "awards": [],
             "country": "USA",
@@ -199,90 +145,55 @@
     "pt": [
         {
             "name": "Corra!",
-            "cast": [
-                "Daniel Kaluuya"
-            ],
+            "cast": ["Daniel Kaluuya"],
             "directBy": "Jordan Peele",
-            "awards": [
-                "Oscar de Melhor Roteiro"
-            ],
+            "awards": ["Oscar de Melhor Roteiro"],
             "country": "EUA",
             "productionBy": "Universal Studios"
         },
         {
             "name": "O Iluminado",
-            "cast": [
-                "Jack Nicholson",
-                "Shelley Duvall"
-            ],
+            "cast": ["Jack Nicholson", "Shelley Duvall"],
             "directBy": "Stanley Kubrick",
-            "awards": [
-                "Oscar de Melhor Trilha Sonora"
-            ],
+            "awards": ["Oscar de Melhor Trilha Sonora"],
             "country": "EUA",
             "productionBy": "Warner Bros."
         },
         {
             "name": "A Origem",
-            "cast": [
-                "Leonardo DiCaprio",
-                "Joseph Gordon-Levitt"
-            ],
+            "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
             "directBy": "Christopher Nolan",
-            "awards": [
-                "Oscar de Melhores Efeitos Visuais"
-            ],
+            "awards": ["Oscar de Melhores Efeitos Visuais"],
             "country": "EUA",
             "productionBy": "Legendary Pictures"
         },
         {
             "name": "Pulp Fiction: Tempo de Violência",
-            "cast": [
-                "John Travolta",
-                "Uma Thurman"
-            ],
+            "cast": ["John Travolta", "Uma Thurman"],
             "directBy": "Quentin Tarantino",
-            "awards": [
-                "Oscar de Melhor Roteiro Original"
-            ],
+            "awards": ["Oscar de Melhor Roteiro Original"],
             "country": "EUA",
             "productionBy": "Miramax"
         },
         {
             "name": "O Poderoso Chefão",
-            "cast": [
-                "Marlon Brando",
-                "Al Pacino"
-            ],
+            "cast": ["Marlon Brando", "Al Pacino"],
             "directBy": "Francis Ford Coppola",
-            "awards": [
-                "Oscar de Melhor Filme",
-                "Oscar de Melhor Ator"
-            ],
+            "awards": ["Oscar de Melhor Filme", "Oscar de Melhor Ator"],
             "country": "EUA",
             "productionBy": "Paramount Pictures"
         },
         {
             "name": "Pobres Criaturas",
-            "cast": [
-                "Emma Stone",
-                "Mark Ruffalo"
-            ],
+            "cast": ["Emma Stone", "Mark Ruffalo"],
             "directBy": "Yorgos Lanthimos",
-            "awards": [
-                "Oscar de Melhor Atriz",
-                "Oscar de Melhor Maquiagem",
-                "Oscar de Melhor Direção de Arte"
-            ],
+            "awards": ["Oscar de Melhor Atriz", "Oscar de Melhor Maquiagem", "Oscar de Melhor Direção de Arte"],
             "country": "EUA",
             "productionBy": "Searchlight Pictures"
         },
         {
             "name": "La La Land: Cantando Estações",
-            "cast": [
-                "Emma Stone",
-                "Ryan Gosling"
-            ],
+            "cast": ["Emma Stone", "Ryan Gosling"],
             "directBy": "Damien Chazelle",
             "awards": [
                 "Oscar de Melhor Atriz",
@@ -296,9 +207,7 @@
         },
         {
             "name": "Midsommar: O Mal Não Espera a Noite",
-            "cast": [
-                "Florence Pugh"
-            ],
+            "cast": ["Florence Pugh"],
             "directBy": "Ari Aster",
             "awards": [],
             "country": "EUA",
@@ -306,9 +215,7 @@
         },
         {
             "name": "Guerra Civil",
-            "cast": [
-                "Wagner Moura"
-            ],
+            "cast": ["Wagner Moura"],
             "directBy": "Alex Garland",
             "awards": [],
             "country": "EUA",
@@ -316,9 +223,7 @@
         },
         {
             "name": "Tropa de Elite",
-            "cast": [
-                "Wagner Moura"
-            ],
+            "cast": ["Wagner Moura"],
             "directBy": "José Padilha",
             "awards": [],
             "country": "Brasil",
@@ -326,9 +231,7 @@
         },
         {
             "name": "Central do Brasil",
-            "cast": [
-                "Fernanda Montenegro"
-            ],
+            "cast": ["Fernanda Montenegro"],
             "directBy": "Walter Salles",
             "awards": [],
             "country": "Brasil",
@@ -336,9 +239,7 @@
         },
         {
             "name": "Argentina, 1985",
-            "cast": [
-                "Ricardo Darín"
-            ],
+            "cast": ["Ricardo Darín"],
             "directBy": "Santiago Mitre",
             "awards": [],
             "country": "Argentina",
@@ -346,9 +247,7 @@
         },
         {
             "name": "O Fabuloso Destino de Amélie Poulain",
-            "cast": [
-                "Audrey Tautou"
-            ],
+            "cast": ["Audrey Tautou"],
             "directBy": "Jean-Pierre Jeunet",
             "awards": [],
             "country": "França",
@@ -356,9 +255,7 @@
         },
         {
             "name": "A Pior Pessoa do Mundo",
-            "cast": [
-                "Renate Reinsve"
-            ],
+            "cast": ["Renate Reinsve"],
             "directBy": "Joachim Trier",
             "awards": [],
             "country": "Noruega",
@@ -366,10 +263,7 @@
         },
         {
             "name": "Duna",
-            "cast": [
-                "Zendaya",
-                "Timothée Chalamet"
-            ],
+            "cast": ["Zendaya", "Timothée Chalamet"],
             "directBy": "Denis Villeneuve",
             "awards": [
                 "Oscar de Melhores Efeitos Visuais",
@@ -384,9 +278,7 @@
         },
         {
             "name": "Barbie",
-            "cast": [
-                "Margot Robbie"
-            ],
+            "cast": ["Margot Robbie"],
             "directBy": "Greta Gerwig",
             "awards": [],
             "country": "EUA",

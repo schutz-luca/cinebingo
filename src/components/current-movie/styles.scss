@@ -1,0 +1,54 @@
+.current-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    background: #363636;
+    padding: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+
+    .lasts {
+        background: #646cff;
+        // color: black;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster {
+    width: 100px;
+    height: 140px;
+    background: #181818;
+    border-radius: 0.75rem;
+}

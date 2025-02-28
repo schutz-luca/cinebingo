@@ -5,4 +5,6 @@ export type Content = {
     awards: string[];
     country: string;
     productionBy: string;
-}
+};
+
+export type ContentView = Omit<Content, 'name'>;
