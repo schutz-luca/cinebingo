@@ -11,13 +11,10 @@ export const TargetMovie = () => {
     return (
         <>
             <div className='current-content'>
-                {/* <div className='content'> */}
                 <div className='lasts'>{lasts}</div>
                 <div className='details'>
                     <h2>{currentContent?.name}</h2>
-                    <div>1997</div>
                 </div>
-                {/* </div> */}
                 <div>
                     <button onClick={skip}>
                         <RiSkipForwardFill />

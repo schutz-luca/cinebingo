@@ -1,0 +1,65 @@
+@import '../../styles/variables';
+
+.board {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 260px); /* Creates 3 equal columns */
+    grid-template-rows: repeat(3, 140px); /* Creates 3 equal rows */
+    margin-top: 20px;
+    background: #363636;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 160px); /* Creates 3 equal columns */
+        grid-template-rows: repeat(3, 100px);
+    }
+}
+
+.board-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; /* Green background */
+    color: white;
+    font-size: 24px;
+    border: 1px solid #5e5e5e; /* White border */
+    border-radius: 0;
+
+    &:nth-child(odd) {
+        background-color: #1b1b1b;
+    }
+
+    &:nth-child(even) {
+        background-color: #252525;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-weight: 200;
+        font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+
+    &.correct {
+        background-color: #44864d;
+    }
+    &.wrong {
+        background-color: #642626;
+    }
+
+    @media (max-width: 768px) {
+        h4 {
+            font-size: 14px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}

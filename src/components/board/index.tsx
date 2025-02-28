@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { categoryLabels } from '../../utils/translate';
 import { GameContext } from '../../context/game-context';
 import { BoardItem } from './types';
+import './styles.scss';
 
 export const Board = () => {
     const { board, currentContent, skip, points, skipableContent, gameOverReport } = useContext(GameContext);

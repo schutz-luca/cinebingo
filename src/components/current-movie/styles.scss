@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .current-content {
     display: flex;
     align-items: center;
@@ -9,9 +11,10 @@
     margin-bottom: 2rem;
 
     .lasts {
-        background: #646cff;
+        background: $primary;
         // color: black;
         width: 60px;
+        min-width: 60px;
         height: 60px;
         display: flex;
         justify-content: center;
