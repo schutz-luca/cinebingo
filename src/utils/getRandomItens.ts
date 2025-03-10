@@ -1,21 +1,21 @@
-export const getRandomItems = <T>(arr: T[], count: number) => {
-    // Create a new array to store the random items
-    const randomItems = [];
+export const getRandomItems = <T>(arr: T[], count: number, seed?: number): T[] => {
+    if (arr.length === 0 || count <= 0) return [];
 
-    // Clone the array to avoid modifying the original
-    const arrayCopy = [...arr];
+    // Function to generate a pseudo-random number based on the seed (if provided)
+    const randomFn =
+        seed !== undefined
+            ? (n: number) => {
+                  let x = Math.sin(seed + n) * 10000;
+                  return x - Math.floor(x);
+              }
+            : () => Math.random(); // Uses Math.random() if no seed is provided
 
-    // While we need more items
-    while (count > 0 && arrayCopy.length > 0) {
-        // Generate a random index
-        const randomIndex = Math.floor(Math.random() * arrayCopy.length);
+    // Shuffle items using the seed-based or random function
+    const shuffledArray = arr
+        .map((item, index) => ({ item, rand: randomFn(index) }))
+        .sort((a, b) => a.rand - b.rand)
+        .map((entry) => entry.item);
 
-        // Remove the item at the random index and add it to the result array
-        randomItems.push(arrayCopy[randomIndex]);
-        arrayCopy.splice(randomIndex, 1); // Remove the item to avoid duplicates
-
-        count--; // Decrease the count of needed items
-    }
-
-    return randomItems;
+    // Return the first 'count' items
+    return shuffledArray.slice(0, count);
 };

@@ -6,6 +6,7 @@ import { isEqual } from 'lodash';
 import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';
+import { createTodaySeed } from '../../utils/createTodaySeed';
 
 export const GameContext = createContext({} as GameContextData);
 
@@ -17,6 +18,7 @@ export const GameProvider = (props: Parent) => {
     const [points, setPoints] = useState(0);
 
     const currentContent = skipableContent[currentIndex];
+    const todaySeed = createTodaySeed();
 
     const skip = () => setCurrentIndex(currentIndex + 1);
 
@@ -28,13 +30,13 @@ export const GameProvider = (props: Parent) => {
         if (!item.awards?.length) keys = keys.filter((key) => key !== 'awards');
 
         // Select a random category
-        const selectedKey = getRandomItems(keys, 1)[0] as unknown as keyof ContentView;
+        const selectedKey = getRandomItems(keys, 1, todaySeed)[0] as unknown as keyof ContentView;
 
         // Find the corresponding category value
         const value = item[selectedKey];
 
         // If the option is an array, select a random value
-        const selectedValue = Array.isArray(value) ? getRandomItems(value, 1)[0] : value;
+        const selectedValue = Array.isArray(value) ? getRandomItems(value, 1, todaySeed)[0] : value;
 
         let selectedCategory = {
             category: selectedKey,
@@ -49,7 +51,7 @@ export const GameProvider = (props: Parent) => {
     };
 
     const generateBoard = (content: ContentView[]) => {
-        const selectedContent = getRandomItems<ContentView>(content, 9);
+        const selectedContent = getRandomItems<ContentView>(content, 9, todaySeed);
 
         const selectedCategories: BoardItem[] = [];
 
@@ -66,7 +68,7 @@ export const GameProvider = (props: Parent) => {
         const board = generateBoard(allContent);
 
         // Select skipable options
-        const selectedContent = getRandomItems<Content>(allContent, allContent.length);
+        const selectedContent = getRandomItems<Content>(allContent, allContent.length, todaySeed);
 
         setSkipableContent(selectedContent);
         setBoard(board);
