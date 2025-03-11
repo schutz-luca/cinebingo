@@ -5,8 +5,7 @@ import { Board } from './components/board';
 import { GameOverReport } from './components/game-over-report';
 import { GameContext } from './context/game-context';
 import { RiMovie2AiLine } from 'react-icons/ri';
-import OscarIcon from './assets/oscar-icon.svg';
-import { GiBrazilFlag, GiPartyPopper } from 'react-icons/gi';
+import { GiBrazilFlag } from 'react-icons/gi';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 
 function App() {

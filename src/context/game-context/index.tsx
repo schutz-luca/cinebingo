@@ -2,7 +2,6 @@ import { createContext, useEffect, useState } from 'react';
 import { GameContextData } from './types';
 import { Parent } from '../../@types/commons';
 import { BoardItem } from '../../components/board/types';
-import { isEqual } from 'lodash';
 import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { GameContext } from '../../context/game-context';
-import { FaSkull, FaSkullCrossbones } from 'react-icons/fa';
+import { FaSkull } from 'react-icons/fa';
 
 export const GameOverReport = () => {
     const { gameOverReport } = useContext(GameContext);
