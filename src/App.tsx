@@ -5,15 +5,26 @@ import { Board } from './components/board';
 import { GameOverReport } from './components/game-over-report';
 import { GameContext } from './context/game-context';
 import { RiMovie2AiLine } from 'react-icons/ri';
+import OscarIcon from './assets/oscar-icon.svg';
+import { GiBrazilFlag, GiPartyPopper } from 'react-icons/gi';
+import { MdOutlineStarPurple500 } from 'react-icons/md';
 
 function App() {
     const { gameOverReport } = useContext(GameContext);
     return (
         <div className='container'>
-            <h1>
-                cine<span className='cursive'>bingo</span>
-                <RiMovie2AiLine />
-            </h1>
+            <div className='logo'>
+                <div className='center br'>
+                    <MdOutlineStarPurple500 />
+                    {/* <img src={OscarIcon} /> */}
+                    <GiBrazilFlag />
+                    <MdOutlineStarPurple500 />
+                </div>
+                <h1 className='center'>
+                    <RiMovie2AiLine />
+                    cine<span className='cursive'>bingo</span>
+                </h1>
+            </div>
             {!gameOverReport.value ? <TargetMovie /> : <GameOverReport />}
 
             <Board />

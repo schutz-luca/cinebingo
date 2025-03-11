@@ -31,10 +31,6 @@ h1 {
     font-size: 3.2em;
     line-height: 1.1;
     margin-top: 50px;
-
-    @media (max-width: 768px) {
-        font-size: 2em;
-    }
 }
 
 h2 {
@@ -57,26 +53,24 @@ p {
     }
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     height: 100%;
-
-    h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem 0;
-        svg {
-            height: 40px;
-            width: 40px;
-            margin-left: 10px;
-        }
-    }
 }
 
 .cursive {
     font-family: Ephesis, sans-serif;
     font-size: 70px;
     padding: 0 3px;
+
+    @media (max-width: 768px) {
+        font-size: 60px;
+    }
 }
 
 .over-report {
@@ -85,4 +79,52 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.logo {
+    margin-bottom: 2rem;
+
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0;
+        line-height: 50px;
+
+        svg {
+            height: 40px;
+            width: 40px;
+            margin-bottom: -7px;
+        }
+    }
+
+    .br {
+        img,
+        svg {
+            width: 25px;
+            height: 25px;
+            color: white;
+            opacity: 0.65;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            line-height: 40px;
+            font-size: 2.5em;
+
+            svg {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .br {
+            img,
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }
