@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Lexend:wght@200;300;400;500;600;700&display=swap');
-@import './styles/variables';
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Lexend:wght@200;300;400;500;600;700&display=swap");
+@import "./styles/variables";
 
 :root {
     font-family: Lexend, sans-serif;
@@ -8,7 +8,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background: linear-gradient(135deg, #1b1b1b, #0f0f0f);
+    background: linear-gradient(115deg,  #252525, 10%, #1b1b1b, 30%, #141414, 60%, #0e0e0e, 85%, #000000);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
