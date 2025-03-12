@@ -1,8 +1,7 @@
 import { createTodaySeed } from './createTodaySeed';
 
-export const getRandomItems = <T>(arr: T[], count: number, dontUseSeed?: boolean): T[] => {
-    let seed = undefined;
-    if (!dontUseSeed) seed = createTodaySeed();
+export const getRandomItems = <T>(arr: T[], count: number, seed?: number): T[] => {
+    if (!seed) seed = createTodaySeed();
 
     if (arr.length === 0 || count <= 0) return [];
 

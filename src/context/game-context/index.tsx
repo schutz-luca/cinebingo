@@ -5,6 +5,7 @@ import { BoardItem } from '../../components/board/types';
 import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';
+import { createTodaySeed } from '../../utils/createTodaySeed';
 
 export const GameContext = createContext({} as GameContextData);
 
@@ -52,12 +53,15 @@ export const GameProvider = (props: Parent) => {
         selectedCategories.push(selectedCategory);
     };
 
-    const generateBoard = (content: ContentView[]) => {
-        const selectedContents = getRandomItems<ContentView>(content, 9);
+    const generateBoard = (allContents: ContentView[]) => {
+        const selectedContents = getRandomItems<ContentView>(allContents, 9);
 
         const selectedCategories: BoardItem[] = [];
 
-        selectedContents.map((content) => selectCategoryFromContent(content, selectedCategories));
+        // Shuffle board items
+        getRandomItems(selectedContents, selectedContents.length).map((content) =>
+            selectCategoryFromContent(content, selectedCategories),
+        );
 
         return selectedCategories;
     };
@@ -69,8 +73,11 @@ export const GameProvider = (props: Parent) => {
         // Generate board
         const board = generateBoard(allContent);
 
+        // Prevent from using exactly the same seed to `selectedContent`, preventing it from being on the same order of the board options
+        const seed = (createTodaySeed() / 2) * 3;
+
         // Select skipable options
-        const selectedContent = getRandomItems<Content>(allContent, allContent.length);
+        const selectedContent = getRandomItems<Content>(allContent, allContent.length, seed);
 
         setSkipableContent(selectedContent);
         setBoard(board);
