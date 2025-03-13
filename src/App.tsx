@@ -7,15 +7,17 @@ import { GameContext } from './context/game-context';
 import { RiMovie2AiLine } from 'react-icons/ri';
 import { GiBrazilFlag } from 'react-icons/gi';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
+import { Ranking } from './components/ranking';
 
 function App() {
     const { gameOverReport } = useContext(GameContext);
+
     return (
         <div className='container'>
+            <Ranking />
             <div className='logo'>
                 <div className='center br'>
                     <MdOutlineStarPurple500 />
-                    {/* <img src={OscarIcon} /> */}
                     <GiBrazilFlag />
                     <MdOutlineStarPurple500 />
                 </div>
