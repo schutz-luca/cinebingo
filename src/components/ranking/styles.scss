@@ -7,7 +7,7 @@
     left: -2px;
     top: 80px;
     max-width: 400px;
-    min-width: 180px;
+    min-width: 200px;
 
     p,
     & > * {
@@ -38,7 +38,7 @@
             opacity: 0;
         }
         .ranking-button {
-            width: 180px;
+            width: 200px;
             border-radius: 0 10px 10px 0;
         }
     }
@@ -86,7 +86,7 @@
 }
 
 .ranking {
-    background: #423825;
+    background: #423825ea;
     padding-top: 43px;
     border-radius: 0 10px 10px 0;
     border: $gold 2px solid;
