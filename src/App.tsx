@@ -8,6 +8,7 @@ import { RiMovie2AiLine } from 'react-icons/ri';
 import { GiBrazilFlag } from 'react-icons/gi';
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { Ranking } from './components/ranking';
+import { getLocalDate } from './utils/getLocalDate';
 
 function App() {
     const { gameOverReport } = useContext(GameContext);
@@ -25,6 +26,7 @@ function App() {
                     <RiMovie2AiLine />
                     cine<span className='cursive'>bingo</span>
                 </h1>
+                <small>{getLocalDate().toLocaleDateString().replace(/\//g, '.')}</small>
             </div>
             {!gameOverReport.value ? <TargetMovie /> : <GameOverReport />}
 

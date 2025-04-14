@@ -1,0 +1,179 @@
+@import '../../styles/variables';
+
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -2px;
+    top: 80px;
+    max-width: 400px;
+    min-width: 180px;
+
+    p,
+    & > * {
+        transition: all ease-out 0.3s;
+    }
+
+    transition: width ease-out 0.7s;
+
+    @media (max-width: 885px) {
+        top: 45px;
+    }
+
+    &.collapsed {
+        @media (max-width: 885px) {
+            .ranking-button {
+                width: 50px !important;
+
+                .click {
+                    display: none;
+                }
+            }
+            p {
+                display: none;
+            }
+        }
+
+        .ranking {
+            opacity: 0;
+        }
+        .ranking-button {
+            width: 180px;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}
+
+.ranking-button {
+    z-index: 1;
+    background: $gold;
+    padding: 5px 0px;
+    border-radius: 0 10px 0 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(0.8);
+    }
+
+    .icon {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        font-size: 30px;
+    }
+
+    p {
+        font-weight: 600;
+        opacity: 1;
+    }
+
+    .click {
+        font-size: 22px;
+        opacity: 0.7;
+        margin-bottom: -5px;
+    }
+}
+
+.ranking {
+    background: #423825;
+    padding-top: 43px;
+    border-radius: 0 10px 10px 0;
+    border: $gold 2px solid;
+    margin-top: 10px;
+    opacity: 1;
+
+    h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    small {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    ol {
+        margin: 5px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        padding-top: 8px;
+
+        li {
+            width: fit-content;
+            padding-left: 15px;
+            font-weight: 100;
+
+            b {
+                font-weight: 400;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 10px;
+        background: #202020;
+        border-radius: 0 0 10px 0;
+
+        h4 {
+            font-weight: 300;
+            font-size: 16px;
+            opacity: 0.7;
+            margin-bottom: 5px;
+
+            svg {
+                margin-left: 5px;
+            }
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            height: 40px;
+
+            button {
+                padding: 8px 12px;
+                border-radius: 8px;
+                font-weight: 300;
+            }
+
+            input {
+                all: unset;
+                background: #181818;
+                border-radius: 8px;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.empty-ranking {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
