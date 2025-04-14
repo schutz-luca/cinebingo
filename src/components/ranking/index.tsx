@@ -3,6 +3,8 @@ import { useSharedRanking } from '../../lib/fluid-framework/useSharedRanking';
 import { sortRanking } from '../../utils/sortRanking';
 import { GameContext } from '../../context/game-context';
 import { userStorage } from '../../utils/userStorage';
+import './styles.scss';
+import { getLocalDate } from '../../utils/getLocalDate';
 
 export const Ranking = () => {
     const { sharedRanking, joinPoints, joinUser } = useSharedRanking();
@@ -30,7 +32,7 @@ export const Ranking = () => {
     }, [gameOverReport.value, userJoined]);
 
     return (
-        <div>
+        <div className='ranking'>
             {!userJoined && (
                 <form onSubmit={joinRanking}>
                     <h4>Participe do ranking global</h4>
@@ -40,7 +42,9 @@ export const Ranking = () => {
             )}
             {sharedRanking && (
                 <>
-                    <h4>{sharedRanking?.dateCode} Ranking</h4>
+                    <h4>
+                        Ranking<small>{getLocalDate().toLocaleDateString()}</small>{' '}
+                    </h4>
 
                     <ol>
                         {players.map((player, index) => (
