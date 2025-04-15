@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .ranking-container {
     display: flex;
@@ -13,8 +13,6 @@
     & > * {
         transition: all ease-out 0.3s;
     }
-
-    transition: width ease-out 0.7s;
 
     @media (max-width: 885px) {
         top: 45px;
@@ -36,6 +34,7 @@
 
         .ranking {
             opacity: 0;
+            z-index: 0;
         }
         .ranking-button {
             width: 200px;
