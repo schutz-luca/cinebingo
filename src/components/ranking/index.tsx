@@ -13,6 +13,8 @@ export const Ranking = () => {
     const [userJoined, setUserJoined] = useState(!!userStorage.get());
     const [collapsed, setCollapsed] = useState(true);
 
+    const RANKING_COUNT = 10;
+
     const { gameOverReport } = useContext(GameContext);
 
     const players = sharedRanking ? sortRanking(sharedRanking.players) : [];
@@ -31,7 +33,7 @@ export const Ranking = () => {
     useEffect(() => {
         if (!gameOverReport.value || !userJoined) return;
 
-        joinPoints(gameOverReport.value.points, gameOverReport.value.optionsUsed);
+        joinPoints(gameOverReport.value.points);
     }, [gameOverReport.value, userJoined]);
 
     return (
@@ -62,9 +64,13 @@ export const Ranking = () => {
                         ) : (
                             <ol>
                                 {players.map((player, index) => (
-                                    <li key={player.id + index}>
-                                        <b>{player.name}</b>: {player.points} pontos / {player.tries} tentativas
-                                    </li>
+                                    <>
+                                        {index <= RANKING_COUNT - 1 &&
+                                            <li key={player.id + index}>
+                                                <b>{player.name}</b>: {player.points} pontos / {player.tries}ª tentativa
+                                            </li>
+                                        }
+                                    </>
                                 ))}
                             </ol>
                         )}

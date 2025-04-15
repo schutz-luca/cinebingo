@@ -36,20 +36,36 @@ export const useSharedRanking = () => {
         if (user && user.done !== todaySeed) userStorage.set({ ...user, done: undefined });
     };
 
-    const joinPoints = (points: number, tries: number) => {
+    const joinPoints = (points: number) => {
         const user = userStorage.get();
         if (!rankingMap || !sharedRanking || !user) return;
 
         const player: Player = {
             id: user.id,
             name: user.name,
+            tries: 1,
             points,
-            tries,
         };
+
+        // Ensure that the same player will appear only once on ranking
+        let players;
+        if (sharedRanking.players.map((item) => item.id).includes(player.id))
+            players = sharedRanking.players.map((item) =>
+                item.id === player.id
+                    ? {
+                        ...item,
+                        // Only overwrite if the current points are bigger than the previous
+                        points: player.points > item.points ? player.points : item.points,
+                        // Always counts the tries
+                        tries: (item?.tries || 0) + 1,
+                    }
+                    : item,
+            );
+        else players = [...sharedRanking.players, player];
 
         rankingMap.set(key, {
             dateCode: sharedRanking.dateCode,
-            players: [...sharedRanking.players, player],
+            players,
         } as Ranking);
 
         userStorage.set({ ...user, done: sharedRanking.dateCode });
@@ -67,6 +83,7 @@ export const useSharedRanking = () => {
         if (!initialized && rankingMap && !rankingMap.listenerCount('valueChanged')) {
             if (!initialized) setInitialized(true);
             rankingMap.on('valueChanged', refresh);
+            // rankingMap.set(key, undefined);
             refresh();
         }
     }, [rankingMap]);
