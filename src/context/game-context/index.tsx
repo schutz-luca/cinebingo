@@ -6,7 +6,6 @@ import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';
 import { createTodaySeed } from '../../utils/createTodaySeed';
-import { shuffleArray } from '../../utils/shuffleArray';
 
 export const GameContext = createContext({} as GameContextData);
 
