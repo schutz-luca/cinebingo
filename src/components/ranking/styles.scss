@@ -43,6 +43,9 @@
             .click {
                 opacity: 0.7;
             }
+            .arrows {
+                opacity: 0;
+            }
         }
     }
 }
@@ -89,6 +92,13 @@
         transform: rotate(340deg);
         position: absolute;
         transition: opacity ease-out 0.3s;
+    }
+
+    .arrows {
+        right: 10px;
+        margin: auto 0;
+        opacity: 0.8;
+        position: absolute;
     }
 }
 

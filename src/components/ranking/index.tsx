@@ -7,6 +7,7 @@ import './styles.scss';
 import { FaRankingStar } from 'react-icons/fa6';
 import { FaGlobe } from 'react-icons/fa';
 import { LiaHandPointer } from 'react-icons/lia';
+import { FiChevronsLeft } from 'react-icons/fi';
 
 export const Ranking = () => {
     const { sharedRanking, joinPoints, joinUser } = useSharedRanking();
@@ -43,7 +44,7 @@ export const Ranking = () => {
                     <FaRankingStar />
                 </div>
                 <p>{players?.length ? `1. ${players[0].name}` : 'Ranking'}</p>
-                {collapsed && <LiaHandPointer className='click' />}
+                {collapsed ? <LiaHandPointer className='click' /> : <FiChevronsLeft className='arrows' />}
             </div>
             <div className='ranking'>
                 {!userJoined && (
