@@ -26,7 +26,7 @@ function App() {
                     <RiMovie2AiLine />
                     cine<span className='cursive'>bingo</span>
                 </h1>
-                <small>{getLocalDate().toLocaleDateString().replace(/\//g, '.')}</small>
+                <small className='date'>{getLocalDate().toLocaleDateString().replace(/\//g, '.')}</small>
             </div>
             {!gameOverReport.value ? <TargetMovie /> : <GameOverReport />}
 

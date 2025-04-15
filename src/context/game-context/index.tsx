@@ -6,6 +6,7 @@ import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';
 import { createTodaySeed } from '../../utils/createTodaySeed';
+import { shuffleArray } from '../../utils/shuffleArray';
 
 export const GameContext = createContext({} as GameContextData);
 
@@ -35,8 +36,16 @@ export const GameProvider = (props: Parent) => {
                 ),
         );
 
+        // Enhance randomness preventing multiple repeated categories in the board
+        const categoriesCount: any = {};
+        const excludeList: (keyof ContentView)[] = [];
+        selectedCategories.forEach((item) => {
+            categoriesCount[item.category] = (categoriesCount?.[item.category] || 0) + 1;
+            if (categoriesCount[item.category] >= 2) excludeList.push(item.category);
+        });
+
         // Select a random category
-        const selectedKey = getRandomItems(keys, 1)[0];
+        const selectedKey = getRandomItems(keys, 1, undefined, excludeList)[0];
 
         // Find the corresponding category value
         const value = content[selectedKey];
@@ -56,12 +65,15 @@ export const GameProvider = (props: Parent) => {
     const generateBoard = (allContents: ContentView[]) => {
         const selectedContents = getRandomItems<ContentView>(allContents, 9);
 
-        const selectedCategories: BoardItem[] = [];
+        let selectedCategories: BoardItem[] = [];
 
         // Shuffle board items
         getRandomItems(selectedContents, selectedContents.length).map((content) =>
             selectCategoryFromContent(content, selectedCategories),
         );
+
+        // Prevent equal categories of being in sequence
+        selectedCategories = getRandomItems(selectedCategories, selectedCategories.length);
 
         return selectedCategories;
     };
@@ -101,6 +113,13 @@ export const GameProvider = (props: Parent) => {
                 optionsUsed: currentIndex,
             });
         }
+
+        if (board.filter((item) => item.checked === 'correct').length === board.length)
+            setGameOverReport({
+                win: true,
+                points,
+                optionsUsed: currentIndex,
+            });
     }, [currentIndex]);
 
     const gameContextData: GameContextData = {
