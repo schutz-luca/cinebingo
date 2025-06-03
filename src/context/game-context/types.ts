@@ -1,5 +1,6 @@
 import { BoardItem } from '../../components/board/types';
 import { State } from '../../@types/commons';
+import { Content } from '../../@types/content.type';
 
 export interface GameOverReport {
     optionsUsed: number;
@@ -14,5 +15,5 @@ export interface GameContextData {
     points: State<number>;
     currentIndex: State<number>;
     skip: () => void;
-    currentContent: any;
+    currentContent: Content;
 }

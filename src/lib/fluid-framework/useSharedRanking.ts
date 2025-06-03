@@ -53,12 +53,12 @@ export const useSharedRanking = () => {
             players = sharedRanking.players.map((item) =>
                 item.id === player.id
                     ? {
-                        ...item,
-                        // Only overwrite if the current points are bigger than the previous
-                        points: player.points > item.points ? player.points : item.points,
-                        // Always counts the tries
-                        tries: (item?.tries || 0) + 1,
-                    }
+                          ...item,
+                          // Only overwrite if the current points are bigger than the previous
+                          points: player.points > item.points ? player.points : item.points,
+                          // Always counts the tries
+                          tries: (item?.tries || 0) + 1,
+                      }
                     : item,
             );
         else players = [...sharedRanking.players, player];

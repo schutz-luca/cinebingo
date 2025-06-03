@@ -1,55 +1,74 @@
 {
     "en": [
         {
-            "name": "GET OUT!",
+            "name": "Get Out",
+            "year": 2017,
             "cast": ["Daniel Kaluuya"],
             "directBy": "Jordan Peele",
             "awards": ["Oscar Best Screenplay"],
             "country": "USA",
-            "productionBy": "Universal Studios"
+            "productionBy": "Universal Studios",
+            "tmdbId": 419430,
+            "poster": "https://image.tmdb.org/t/p/w500/mE24wUCfjK8AoBBjaMjho7Rczr7.jpg"
         },
         {
-            "name": "THE SHINING",
+            "name": "The Shining",
+            "year": 1980,
             "cast": ["Jack Nicholson", "Shelley Duvall"],
             "directBy": "Stanley Kubrick",
             "awards": ["Oscar Best Original Score"],
             "country": "USA",
-            "productionBy": "Warner Bros."
+            "productionBy": "Warner Bros.",
+            "tmdbId": 694,
+            "poster": "https://image.tmdb.org/t/p/w500/xazWoLealQwEgqZ89MLZklLZD3k.jpg"
         },
         {
-            "name": "INCEPTION",
+            "name": "Inception",
+            "year": 2010,
             "cast": ["Leonardo DiCaprio", "Joseph Gordon-Levitt"],
             "directBy": "Christopher Nolan",
             "awards": ["Oscar Best Visual Effects"],
             "country": "USA",
-            "productionBy": "Legendary Pictures"
+            "productionBy": "Legendary Pictures",
+            "tmdbId": 27205,
+            "poster": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
         },
         {
-            "name": "PULP FICTION",
+            "name": "Pulp Fiction",
+            "year": 1994,
             "cast": ["John Travolta", "Uma Thurman"],
             "directBy": "Quentin Tarantino",
             "awards": ["Oscar Best Original Screenplay"],
             "country": "USA",
-            "productionBy": "Miramax"
+            "productionBy": "Miramax",
+            "tmdbId": 680,
+            "poster": "https://image.tmdb.org/t/p/w500/vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg"
         },
         {
-            "name": "THE GODFATHER",
+            "name": "The Godfather",
+            "year": 1972,
             "cast": ["Marlon Brando", "Al Pacino"],
             "directBy": "Francis Ford Coppola",
             "awards": ["Oscar Best Picture", "Oscar Best Actor"],
             "country": "USA",
-            "productionBy": "Paramount Pictures"
+            "productionBy": "Paramount Pictures",
+            "tmdbId": 238,
+            "poster": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
         },
         {
-            "name": "POOR THINGS",
+            "name": "Poor Things",
+            "year": 2023,
             "cast": ["Emma Stone", "Mark Ruffalo"],
             "directBy": "Yorgos Lanthimos",
             "awards": ["Oscar Best Actress", "Oscar Best Makeup", "Oscar Best Production Design"],
             "country": "USA",
-            "productionBy": "Searchlight Pictures"
+            "productionBy": "Searchlight Pictures",
+            "tmdbId": 792307,
+            "poster": "https://image.tmdb.org/t/p/w500/kCGlIMHnOm8JPXq3rXM6c5wMxcT.jpg"
         },
         {
-            "name": "LA LA LAND",
+            "name": "La La Land",
+            "year": 2016,
             "cast": ["Emma Stone", "Ryan Gosling"],
             "directBy": "Damien Chazelle",
             "awards": [
@@ -60,66 +79,90 @@
                 "Oscar Best Production Design"
             ],
             "country": "USA",
-            "productionBy": "Summit Entertainment"
+            "productionBy": "Summit Entertainment",
+            "tmdbId": 313369,
+            "poster": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg"
         },
         {
-            "name": "MIDSOMMAR",
+            "name": "Midsommar",
+            "year": 2019,
             "cast": ["Florence Pugh"],
             "directBy": "Ari Aster",
             "awards": [],
             "country": "USA",
-            "productionBy": "A24"
+            "productionBy": "A24",
+            "tmdbId": 530385,
+            "poster": "https://image.tmdb.org/t/p/w500/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg"
         },
         {
-            "name": "CIVIL WAR",
+            "name": "Civil War",
+            "year": 2024,
             "cast": ["Wagner Moura"],
             "directBy": "Alex Garland",
             "awards": [],
             "country": "USA",
-            "productionBy": "A24"
+            "productionBy": "A24",
+            "tmdbId": 929590,
+            "poster": "https://image.tmdb.org/t/p/w500/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg"
         },
         {
-            "name": "ELITE SQUAD",
+            "name": "Elite Squad",
+            "year": 2007,
             "cast": ["Wagner Moura"],
             "directBy": "José Padilha",
             "awards": [],
             "country": "Brazil",
-            "productionBy": "Universal Studios"
+            "productionBy": "Universal Studios",
+            "tmdbId": 7347,
+            "poster": "https://image.tmdb.org/t/p/w500/lwIXz785N2fXi8hsBr1IXciFlkM.jpg"
         },
         {
-            "name": "CENTRAL STATION",
+            "name": "Central Station",
+            "year": 1998,
             "cast": ["Fernanda Montenegro"],
-            "directBy": "Walter Carvalho",
+            "directBy": "Walter Salles",
             "awards": [],
             "country": "Brazil",
-            "productionBy": "O2 Filmes"
+            "productionBy": "O2 Filmes",
+            "tmdbId": 1225509,
+            "poster": "https://image.tmdb.org/t/p/w500/5osZDDs0LN5bC8QFUqU3o3mM7XG.jpg"
         },
         {
-            "name": "ARGENTINA 1985",
+            "name": "Argentina, 1985",
+            "year": 2022,
             "cast": ["Ricardo Darín"],
             "directBy": "Santiago Mitre",
             "awards": [],
             "country": "Argentina",
-            "productionBy": "Academia Argentina de Cinema"
+            "productionBy": "Academia Argentina de Cinema",
+            "tmdbId": 714888,
+            "poster": "https://image.tmdb.org/t/p/w500/nmh7vD2eDVRqFJoCpEzVcfGcPPf.jpg"
         },
         {
-            "name": "AMÉLIE",
+            "name": "Amélie",
+            "year": 2001,
             "cast": ["Audrey Tautou"],
             "directBy": "Jean-Pierre Jeunet",
             "awards": [],
             "country": "France",
-            "productionBy": "Gébéka Films"
+            "productionBy": "Gébéka Films",
+            "tmdbId": 194,
+            "poster": "https://image.tmdb.org/t/p/w500/oTKduWL2tpIKEmkAqF4mFEAWAsv.jpg"
         },
         {
-            "name": "THE WORST PERSON IN THE WORLD",
+            "name": "The Worst Person in the World",
+            "year": 2021,
             "cast": ["Renate Reinsve"],
             "directBy": "Joachim Trier",
             "awards": [],
             "country": "Norway",
-            "productionBy": "FilmWave"
+            "productionBy": "FilmWave",
+            "tmdbId": 660120,
+            "poster": "https://image.tmdb.org/t/p/w500/1NxGNQchGBTHXJ6RShLY1IlZqWn.jpg"
         },
         {
-            "name": "DUNE",
+            "name": "Dune",
+            "year": 2021,
             "cast": ["Zendaya", "Timothée Chalamet"],
             "directBy": "Denis Villeneuve",
             "awards": [
@@ -131,15 +174,20 @@
                 "Oscar Best Sound"
             ],
             "country": "USA",
-            "productionBy": "Legendary Pictures"
+            "productionBy": "Legendary Pictures",
+            "tmdbId": 438631,
+            "poster": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg"
         },
         {
-            "name": "BARBIE",
+            "name": "Barbie",
+            "year": 2023,
             "cast": ["Margot Robbie"],
             "directBy": "Greta Gerwig",
             "awards": [],
             "country": "USA",
-            "productionBy": "Warner Bros."
+            "productionBy": "Warner Bros.",
+            "tmdbId": 346698,
+            "poster": "https://image.tmdb.org/t/p/w500/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg"
         }
     ],
     "pt": [

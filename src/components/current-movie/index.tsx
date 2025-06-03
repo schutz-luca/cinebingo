@@ -13,6 +13,7 @@ export const TargetMovie = () => {
             <div className='current-content'>
                 <div className='lasts'>{lasts}</div>
                 <div className='details'>
+                    <img src={currentContent?.poster} />
                     <h2>{currentContent?.name}</h2>
                 </div>
                 <div>

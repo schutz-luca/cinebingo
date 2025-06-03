@@ -66,11 +66,11 @@ export const Ranking = () => {
                             <ol>
                                 {players.map((player, index) => (
                                     <>
-                                        {index <= RANKING_COUNT - 1 &&
+                                        {index <= RANKING_COUNT - 1 && (
                                             <li key={player.id + index}>
                                                 <b>{player.name}</b>: {player.points} pontos / {player.tries}ª tentativa
                                             </li>
-                                        }
+                                        )}
                                     </>
                                 ))}
                             </ol>

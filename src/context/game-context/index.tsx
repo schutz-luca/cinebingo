@@ -6,6 +6,7 @@ import { Content, ContentView } from '../../@types/content.type';
 import { ContentService } from '../../api';
 import { getRandomItems } from '../../utils/getRandomItens';
 import { createTodaySeed } from '../../utils/createTodaySeed';
+import { filterToContentView } from '../../utils/filterToBoardContent';
 
 export const GameContext = createContext({} as GameContextData);
 
@@ -16,7 +17,7 @@ export const GameProvider = (props: Parent) => {
     const [gameOverReport, setGameOverReport] = useState<{ optionsUsed: number; win: boolean; points: number }>();
     const [points, setPoints] = useState(0);
 
-    const currentContent = skipableContent[currentIndex];
+    const currentContent = skipableContent[currentIndex] as Content;
 
     const skip = () => setCurrentIndex(currentIndex + 1);
 
@@ -62,7 +63,7 @@ export const GameProvider = (props: Parent) => {
     };
 
     const generateBoard = (allContents: ContentView[]) => {
-        const selectedContents = getRandomItems<ContentView>(allContents, 9);
+        const selectedContents = filterToContentView(getRandomItems<ContentView>(allContents, 9));
 
         let selectedCategories: BoardItem[] = [];
 

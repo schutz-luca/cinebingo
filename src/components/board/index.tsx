@@ -34,7 +34,7 @@ export const Board = () => {
                 <div>'Board loading...' </div>
             ) : (
                 <>
-                    <h3>{points.value} pontos</h3>
+                    {gameOverReport.value && <h3>{points.value} pontos</h3>}
                     <div className='board'>
                         {board.value.map((item, index) => (
                             <button

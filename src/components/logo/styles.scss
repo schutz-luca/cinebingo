@@ -1,0 +1,68 @@
+.date {
+    opacity: 0.8;
+}
+
+.logo {
+    margin-bottom: 2rem;
+    cursor: default;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+
+    @media (max-width: 885px) {
+        display: none;
+    }
+
+    &:hover {
+        .br {
+            svg {
+                opacity: 1;
+                color: #ecc559;
+            }
+        }
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0;
+        line-height: 50px;
+
+        svg {
+            height: 40px;
+            width: 40px;
+            margin-bottom: -7px;
+        }
+    }
+
+    .br {
+        img,
+        svg {
+            width: 25px;
+            height: 25px;
+            opacity: 0.1;
+            color: white;
+            transition: all ease-out 0.4s;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            line-height: 40px;
+            font-size: 2.5em;
+
+            svg {
+                height: 30px;
+                width: 30px;
+            }
+        }
+
+        .br {
+            img,
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
