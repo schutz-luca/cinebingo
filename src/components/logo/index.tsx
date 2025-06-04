@@ -1,6 +1,5 @@
 import { MdOutlineStarPurple500 } from 'react-icons/md';
 import { RiMovie2AiLine } from 'react-icons/ri';
-import { getLocalDate } from '../../utils/getLocalDate';
 import './styles.scss';
 
 export const Logo = () => (
@@ -14,6 +13,5 @@ export const Logo = () => (
             <RiMovie2AiLine />
             cine<span className='cursive'>bingo</span>
         </h1>
-        <small className='date'>{getLocalDate().toLocaleDateString().replace(/\//g, '.')}</small>
     </div>
 );

@@ -3,54 +3,52 @@
 }
 
 .logo {
-    margin-bottom: 2rem;
     cursor: default;
     position: absolute;
-    left: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     top: 50px;
 
-    @media (max-width: 885px) {
+    @media (max-height: 960px) {
         display: none;
     }
 
-    &:hover {
-        .br {
-            svg {
-                opacity: 1;
-                color: #ecc559;
-            }
-        }
-    }
     h1 {
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0rem 0;
         line-height: 50px;
+        font-size: 30px;
 
         svg {
-            height: 40px;
-            width: 40px;
+            height: 30px;
+            width: 30px;
             margin-bottom: -7px;
         }
+    }
+
+    .cursive {
+        font-size: 43px;
     }
 
     .br {
         img,
         svg {
-            width: 25px;
-            height: 25px;
-            opacity: 0.1;
-            color: white;
+            width: 15px;
+            height: 15px;
+            opacity: 1;
+            color: #ecc559;
+            margin-bottom: -10px;
             transition: all ease-out 0.4s;
         }
     }
 
     @media (max-width: 768px) {
         h1 {
-            line-height: 40px;
-            font-size: 2.5em;
-
+            line-height: 50px;
+            font-size: 20px;
             svg {
                 height: 30px;
                 width: 30px;

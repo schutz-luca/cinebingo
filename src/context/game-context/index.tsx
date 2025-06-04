@@ -23,7 +23,7 @@ export const GameProvider = (props: Parent) => {
 
     const selectCategoryFromContent = (content: ContentView, selectedCategories: BoardItem[]) => {
         // Remove name from board view categories
-        let keys = Object.keys(content).filter((key) => key !== 'name') as (keyof ContentView)[];
+        let keys = Object.keys(content) as (keyof ContentView)[];
 
         // Check and remove if there's empty awards
         if (!content.awards?.length) keys = keys.filter((key) => key !== 'awards');
@@ -41,7 +41,7 @@ export const GameProvider = (props: Parent) => {
         const excludeList: (keyof ContentView)[] = [];
         selectedCategories.forEach((item) => {
             categoriesCount[item.category] = (categoriesCount?.[item.category] || 0) + 1;
-            if (categoriesCount[item.category] >= 2) excludeList.push(item.category);
+            if (categoriesCount[item.category] >= 3) excludeList.push(item.category);
         });
 
         // Select a random category

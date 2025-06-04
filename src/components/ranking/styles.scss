@@ -14,12 +14,12 @@
         transition: all ease-out 0.3s;
     }
 
-    @media (max-width: 885px) {
+    @media (max-width: 1260px) {
         top: 45px;
     }
 
     &.collapsed {
-        @media (max-width: 885px) {
+        @media (max-width: 1260px) {
             .ranking-button {
                 width: 50px !important;
 

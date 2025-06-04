@@ -2,6 +2,7 @@
 
 #root {
     max-width: 1280px;
+    height: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -91,7 +92,7 @@ p {
     object-fit: cover;
     object-position: center center;
     z-index: -1;
-    opacity: 0.2;
+    opacity: 0.4;
 
     filter: blur(4px) brightness(0.3);
     mask-image: linear-gradient(to right, transparent 0%, black 3%, black 97%, transparent 100%);

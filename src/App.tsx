@@ -21,8 +21,8 @@ function App() {
 
     return (
         <div className='container'>
-            <Ranking />
             <Logo />
+            <Ranking />
             {!gameOverReport.value ? <TargetMovie /> : <GameOverReport />}
 
             <Board />
