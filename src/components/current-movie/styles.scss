@@ -33,17 +33,25 @@
         margin-bottom: -30px;
 
         img {
-            height: 200px;
+            height: 300px;
             position: absolute;
-            top: -225px;
-            padding: 12px;
-            // padding-bottom: 0;
-            background: #363636;
+            top: -305px;
+            border-radius: 0.75rem;
             border-radius: 8px;
             z-index: 1;
             cursor: pointer;
 
             transition: all ease-in-out 0.4s;
+
+            @media (max-height: 935px) {
+                height: 250px;
+                top: -255px;
+            }
+
+            @media (max-height: 885px) {
+                height: 200px;
+                top: -205px;
+            }
 
             &:hover {
                 height: 700px;

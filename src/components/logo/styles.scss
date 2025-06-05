@@ -8,9 +8,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 50px;
+    top: 40px;
 
-    @media (max-height: 960px) {
+    @media (max-height: 745px) {
         display: none;
     }
 
@@ -42,25 +42,6 @@
             color: #ecc559;
             margin-bottom: -10px;
             transition: all ease-out 0.4s;
-        }
-    }
-
-    @media (max-width: 768px) {
-        h1 {
-            line-height: 50px;
-            font-size: 20px;
-            svg {
-                height: 30px;
-                width: 30px;
-            }
-        }
-
-        .br {
-            img,
-            svg {
-                width: 20px;
-                height: 20px;
-            }
         }
     }
 }
