@@ -4,7 +4,7 @@ export const categoryLabels = {
         cast: 'Elenco',
         country: 'País',
         directBy: 'Dirigido por',
-        productionBy: 'Produzido por',
+        productionBy: 'Produtora',
     },
     en: {},
 };

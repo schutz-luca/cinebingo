@@ -8,6 +8,8 @@ export const getRandomItems = <T>(arr: T[], count: number, seed?: number, exclud
     // Filter out excluded items (use deep equality if needed)
     const filteredArr = exclude ? arr.filter((item) => !exclude.includes(item)) : arr;
 
+    if (filteredArr.length === 0) return getRandomItems(arr, count, seed);
+
     if (filteredArr.length === 0) return [];
 
     // Function to generate a pseudo-random number based on the seed

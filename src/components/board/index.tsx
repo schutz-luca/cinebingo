@@ -38,7 +38,7 @@ export const Board = () => {
                     <div className='board'>
                         {board.value.map((item, index) => (
                             <button
-                                className={`board-item${item.checked === 'correct' ? ' correct' : ''}`}
+                                className={`board-item${item.checked === 'correct' ? ' correct' : ''} ${item.category}`}
                                 onClick={() => clickContent(item, index)}
                                 disabled={item.checked === 'correct' || !!gameOverReport.value}
                                 key={`${item.value}/${index}`}
