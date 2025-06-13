@@ -43,7 +43,6 @@ export const GameProvider = (props: Parent) => {
             categoriesCount[item.category] = (categoriesCount?.[item.category] || 0) + 1;
             if (categoriesCount[item.category] >= 3) excludeList.push(item.category);
         });
-        console.log(categoriesCount);
 
         // Select a random category
         const selectedKey = getRandomItems(keys, 1, undefined, excludeList)[0];

@@ -76,7 +76,7 @@ export const useSharedRanking = () => {
 
         const value = rankingMap.get(key);
 
-        if (value && !isEqual(value, sharedRanking)) setSharedRanking(value);
+        if (value && !isEqual(value, sharedRanking) && value.dateCode >= createTodaySeed()) setSharedRanking(value);
     }, [rankingMap, sharedRanking]);
 
     useEffect(() => {
