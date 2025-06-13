@@ -53,12 +53,12 @@ export const useSharedRanking = () => {
             players = sharedRanking.players.map((item) =>
                 item.id === player.id
                     ? {
-                          ...item,
-                          // Only overwrite if the current points are bigger than the previous
-                          points: player.points > item.points ? player.points : item.points,
-                          // Always counts the tries
-                          tries: (item?.tries || 0) + 1,
-                      }
+                        ...item,
+                        // Only overwrite if the current points are bigger than the previous
+                        points: player.points > item.points ? player.points : item.points,
+                        // Always counts the tries
+                        tries: (item?.tries || 0) + 1,
+                    }
                     : item,
             );
         else players = [...sharedRanking.players, player];
@@ -76,14 +76,15 @@ export const useSharedRanking = () => {
 
         const value = rankingMap.get(key);
 
-        if (value && !isEqual(value, sharedRanking) && value.dateCode >= createTodaySeed()) setSharedRanking(value);
+        if (value && !isEqual(value, sharedRanking) && value.dateCode >= createTodaySeed()) {
+            setSharedRanking(value);
+            if (!initialized) setInitialized(true);
+        }
     }, [rankingMap, sharedRanking]);
 
     useEffect(() => {
         if (!initialized && rankingMap && !rankingMap.listenerCount('valueChanged')) {
-            if (!initialized) setInitialized(true);
             rankingMap.on('valueChanged', refresh);
-            // rankingMap.set(key, undefined);
             refresh();
         }
     }, [rankingMap]);
