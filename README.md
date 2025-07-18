@@ -1,6 +1,6 @@
 <h1 align="center">cinebingo 🎥</h1>
 
-**Cinebingo** is a movie-themed bingo web app featuring daily rankings to fuel player competitiveness. Coded with **[React](https://react.dev/)** and generated with **[Vite](https://vite.dev/)**.
+**Cinebingo** is a movie-themed bingo web app game featuring daily rankings to fuel player competitiveness. Coded with **[React](https://react.dev/)** and generated with **[Vite](https://vite.dev/)**.
 
 ## 🚀 Technical Features
 - Integration with **[TMDB API](https://developer.themoviedb.org/docs/getting-started)**
