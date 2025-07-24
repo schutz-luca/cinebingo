@@ -2,6 +2,8 @@
 
 **Cinebingo** is a movie-themed bingo web app game featuring daily rankings to fuel player competitiveness. Coded with **[React](https://react.dev/)** and generated with **[Vite](https://vite.dev/)**.
 
+Access the project running in production by clicking [here](https://cinebingo.vercel.app/).
+
 ## 🚀 Technical Features
 - Integration with **[TMDB API](https://developer.themoviedb.org/docs/getting-started)**
 - Real-time global ranking built with **[Fluid Framework](https://fluidframework.com/)**
