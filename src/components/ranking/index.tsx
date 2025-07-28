@@ -50,25 +50,25 @@ export const Ranking = () => {
                 {!userJoined && (
                     <form onSubmit={joinRanking}>
                         <h4>
-                            participe do ranking global <FaGlobe />
+                            Join global ranking <FaGlobe />
                         </h4>
                         <div>
                             <input name='username' placeholder='username' maxLength={8} />
-                            <button>entrar</button>
+                            <button>join</button>
                         </div>
                     </form>
                 )}
                 {sharedRanking ? (
                     <>
                         {players.length === 0 ? (
-                            <div className='empty-ranking'>Pontue e seja o primeiro do dia!</div>
+                            <div className='empty-ranking'>Score and be the first of the day!</div>
                         ) : (
                             <ol>
                                 {players.map((player, index) => (
                                     <>
                                         {index <= RANKING_COUNT - 1 && (
                                             <li key={player.id + index}>
-                                                <b>{player.name}</b>: {player.points} pontos / {player.tries}ª tentativa
+                                                <b>{player.name}</b>: {player.points} points / attempt {player.tries}
                                             </li>
                                         )}
                                     </>

@@ -6,5 +6,11 @@ export const categoryLabels = {
         directBy: 'Dirigido por',
         productionBy: 'Produtora',
     },
-    en: {},
+    en: {
+        awards: 'Awards',
+        cast: 'Cast',
+        country: 'Country',
+        directBy: 'Directed by',
+        productionBy: 'Prodution',
+    },
 };

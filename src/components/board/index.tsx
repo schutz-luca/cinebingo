@@ -43,7 +43,7 @@ export const Board = () => {
                                 disabled={item.checked === 'correct' || !!gameOverReport.value}
                                 key={`${item.value}/${index}`}
                             >
-                                <h4>{categoryLabels.pt[item.category]}</h4>
+                                <h4>{categoryLabels.en[item.category]}</h4>
                                 <p>{item.value}</p>
                             </button>
                         ))}
