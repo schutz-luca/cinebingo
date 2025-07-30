@@ -1,4 +1,4 @@
-<h1 align="center"><img src="src/assets/cinebingo-logo.png" height="110px"/></h1>
+<h1 align="center"><img src="src/assets/cinebingo-logo.png" alt="cinebingo" height="110px"/></h1>
 
 **Cinebingo** is a movie-themed bingo web app game featuring daily rankings to fuel player competitiveness. Coded with **[React](https://react.dev/)** and generated with **[Vite](https://vite.dev/)**.
 
