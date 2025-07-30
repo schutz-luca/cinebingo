@@ -1,21 +1,50 @@
-MIT License
-
 Copyright (c) 2025 Luca Schutzenhofer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
+of this software and associated documentation files (the “Software”), to deal
 in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+to use, copy, modify, merge, publish, and distribute copies of the Software,
+**subject to the following conditions:**
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice, this permission notice, and the author's name must be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+---
+
+COMMERCIAL USE RESTRICTION
+
+The Software may not be used, in whole or in part, for any commercial purpose without prior written authorization from the author.
+
+"Commercial purpose" means any activity intended for commercial advantage, monetary compensation, or private financial gain, including but not limited to:
+- Using the Software in a paid product or service;
+- Selling modified or unmodified versions;
+- Using the Software internally within for-profit organizations;
+- Offering services, subscriptions, or advertisements powered by the Software.
+
+---
+
+BRANDING AND VISUAL IDENTITY RESTRICTION
+
+The use of the name “Cinebingo”, its logo, design system, visual identity, or any brand elements associated with this project is strictly prohibited without explicit written permission from the author.
+
+This includes:
+- Publishing derivatives or forks under the same or confusingly similar name;
+- Using the original or modified visual design (including layout, UI elements, color schemes, or typography) in other projects;
+- Presenting the Software or forks as “official”, “endorsed by”, or “affiliated with” the original author.
+
+---
+
+ATTRIBUTION REQUIREMENT
+
+All copies, modified versions, or public uses of the Software must include clear attribution to the original author:
+> “Originally developed by Luca Schutzenhofer”
+
+For online or UI-based uses, this credit must appear in a visible section such as:
+- The project's "About", "Credits", or footer section;
+- The GitHub or public repository description;
+- Or in documentation accompanying any derivative or adapted version.
+
+---
+
+DISCLAIMER
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE USE OF THIS SOFTWARE.

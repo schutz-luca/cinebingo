@@ -70,4 +70,10 @@ yarn dev
 
 ## 📄 License
 
-The MIT License (MIT)
+This project is licensed under a **custom MIT-based license** with the following conditions:
+
+- ❌ Commercial use is prohibited without written authorization.
+- 🎨 Use of the project’s name (“Cinebingo”), branding, or visual identity is not allowed in forks or derivatives.
+- 🙏 Attribution is required in all forms of distribution and public usage.
+
+See [LICENSE](./LICENSE) for full terms.
